@@ -1,0 +1,45 @@
+body{
+    height: 100%;
+    background: red;
+    display: flex;
+    flex-flow: column wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.loader{
+    
+    width: 75px;
+    height: 100px;
+}
+.loader_ball{
+   
+    bottom: 0;
+    width: 10px;
+    height: 50px;
+    background: #fff;
+    display: inline-block;
+    transform-origin: center bottom;
+    animation: rotate 2s ease-in-out infinite;
+    box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+@keyframes rotate{
+    from{
+        
+        top : 0px;
+        transform: rotate(0deg);
+    }
+    10%{
+        margin-top: 5px;
+        transform: rotate(180deg);
+        
+    }
+    to{
+        margin-top: 650px;
+        transform: rotate(360deg);
+        opacity: 0;
+        
+    }
+    
+}

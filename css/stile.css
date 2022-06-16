@@ -1,0 +1,230 @@
+@import url(reset.css);
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    z-index: 0;
+
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 15vh;
+    background-color: crimson;
+    z-index: 1;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 76vh;
+    background-color: transparent;
+    z-index: 0;
+}
+
+main p{
+    
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1;
+    color: rgb(233, 201, 207);
+}
+
+.waffle{
+    background-color: transparent;
+    position: center;
+    z-index: 0;
+    
+}
+
+main#produit{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 76vh;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#produit{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: transparent;
+    align-items: space-between;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 50%;
+    height: 74vh;
+    z-index: 2;
+}
+
+.produit{
+    width: 250px;
+    height: auto;
+    border-image-slice: fill;
+    justify-content: space-between;
+    justify-items: space-between;
+    align-items: space-between;
+    z-index: 2;
+    background-color: transparent;
+    position: right;
+}    
+
+.produit:hover {
+    background-color: crimson;
+    border-image-slice: fill;
+    transition: 0.2s ease-in-out;
+}
+
+menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 12vh;
+    z-index: 0;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    animation: oui 4s infinite;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    animation: oui 4s infinite;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    animation: oui 4s infinite;
+}
+
+@keyframes oui{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+button {
+    background-color: crimson;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.recette:hover {
+    background-color: #ff4444;
+    display: inline-block;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.choix{
+    cursor: pointer;
+    display: none;
+background-color: rgba(220, 20, 60, 0.593);
+min-width: 50px;
+}
+
+.choix a:hover{
+    background-color: crimson;
+}
+
+.choix a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .choix {
+    display: block;
+    
+}
+
+button:hover {
+    filter :drop-shadow(0px 0px 10px grey);
+    background-color: #ff0000;  
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[placeholder="Votre message"]{
+    height: 30%;
+}
+
+textarea{
+    height: 30%;
+}
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 6vh;
+    background-color: crimson;
+    z-index: 2;
+    font-size: small;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    color: white;
+}
